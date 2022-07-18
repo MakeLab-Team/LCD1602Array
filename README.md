@@ -22,15 +22,15 @@ The LCD displayed are arranged an designated with two codes, one for the backlig
 
 | Row0  | Row1  | Row2  | Row3  |
 |-------|-------|-------|-------|
-| J0/E0 | K0/H0 | J0/G0 | K0/H0 |
-| J1/E1 | K1/H1 | J1/G1 | K1/H1 |
-| J2/E2 | K2/H2 | J2/G2 | K2/H2 |
-| J0/E3 | K0/H3 | J0/G3 | K0/H3 |
-| J1/E4 | K1/H4 | J1/G4 | K1/H4 |
-| J2/E5 | K2/H5 | J2/G5 | K2/H5 |
-| J0/E6 | K0/H6 | J0/G6 | K0/H6 |
-| J1/E7 | K1/H7 | J1/G7 | K1/H7 |
-| J2/E8 | K2/H8 | J2/G8 | K2/H8 |
+| J0/E0 | K0/F0 | J0/G0 | K0/H0 |
+| J1/E1 | K1/F1 | J1/G1 | K1/H1 |
+| J2/E2 | K2/F2 | J2/G2 | K2/H2 |
+| J0/E3 | K0/F3 | J0/G3 | K0/H3 |
+| J1/E4 | K1/F4 | J1/G4 | K1/H4 |
+| J2/E5 | K2/F5 | J2/G5 | K2/H5 |
+| J0/E6 | K0/F6 | J0/G6 | K0/H6 |
+| J1/E7 | K1/F7 | J1/G7 | K1/H7 |
+| J2/E8 | K2/F8 | J2/G8 | K2/H8 |
 
 ### Connections between the Nano and PWMDRVx:
 
