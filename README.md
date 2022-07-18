@@ -41,6 +41,10 @@ The LCD displayed are arranged an designated with two codes, one for the backlig
 | A4   | SDA |
 | A5   | SDL |
 
+### LCD1602 pin Designations:
+The pin designation, left to right when the front side is up, and oriented so the pins are at the top:<br/>
+VSS, VDD, V0, RS, RW, W, D0, D1, D2, D3, D4, D5, D6, D7, LCD+ (A), LCD- (K).
+
 ### Connections between the Nano and the LCD displays:
 
 | Nano | LCD |
@@ -70,6 +74,16 @@ The LCD displayed are arranged an designated with two codes, one for the backlig
 | PWMDRV0 PWM pin 8-15 | X0-7: LED+ (A) |
 | PWMDRV1 PWM pin 0-7  | Y0-7: LED+ (A) |
 | PWMDRV1 PWM pin 8-15 | Z0-7: LED+ (A) |
+
+### Important note about the LCD backlight
+The LCD displays we're using accepts 5V for the backlight, and consumes a very small current. <br/>
+In the unlikely case that you want to build this project too, and use a LCD from a different manufacturer, the backlight specs may differ.<br/>
+You may need to put resistors before each LCD+ (A) (each one is connected seperatly.) <br/>
+If you have a backlight that consumes more current that the arduino or servo driver can handle you need to do the followings:<br/>
+* Use 5 darlington array ULN2803, and use connect what is connected in the description above to an in pin, and the out pin to the original LED+ (A) it was supposed to be connected.  
+* The COM in the ULN2803 should be connected to the proper voltage the backlight works properly with. (you don't need the resistors if you set the voltage properly.)
+* The GND of the ULN2803 are naturally connected to GND.
+* You don't need to bypass the resisors in the Servo Driver in this case.
 
 ### Additional connections:
 One push button doubles as a reset connecting when pushed the NANO RST pin to GND.<br/>
