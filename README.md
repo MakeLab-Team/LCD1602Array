@@ -18,19 +18,19 @@ Strip boards, since all but 2 LCD pins are connected the same way.<br/>
 The servo drivers are denoted PWMDRV0 and PWMDRV1, PWMDRV1 has A0 pad soldered together so that it's I2C address is 0x41.<br/>
 
 ### LCD display arrangment and designation
-The LCD displayed are arranged an designated with two codes, one for the backlight (prefix W/X/Y/Z,)and the other for the content (prefix J/K.) The arrangement is as follows:
+The LCD displayed are arranged an designated with two codes, one for the backlight (prefix E/F/G/H,)and the other for the content (prefix J/K.) The arrangement is as follows:
 
 | Row0  | Row1  | Row2  | Row3  |
 |-------|-------|-------|-------|
-| J0/W0 | K0/X0 | J0/Y0 | K0/Z0 |
-| J1/W1 | K1/X1 | J1/Y1 | K1/Z1 |
-| J2/W2 | K2/X2 | J2/Y2 | K2/Z2 |
-| J0/W3 | K0/X3 | J0/Y3 | K0/Z3 |
-| J1/W4 | K1/X4 | J1/Y4 | K1/Z4 |
-| J2/W5 | K2/X5 | J2/Y5 | K2/Z5 |
-| J0/W6 | K0/X6 | J0/Y6 | K0/Z6 |
-| J1/W7 | K1/X7 | J1/Y7 | K1/Z7 |
-| J2/W8 | K2/X8 | J2/Y8 | K2/Z8 |
+| E0/P0 | F0/Q0 | J0/G0 | K0/H0 |
+| E1/P1 | F1/Q1 | J1/G1 | K1/H1 |
+| E2/P2 | F2/Q2 | J2/G2 | K2/H2 |
+| E0/P3 | F0/Q3 | J0/G3 | K0/H3 |
+| E1/P4 | F1/Q4 | J1/G4 | K1/H4 |
+| E2/P5 | F2/Q5 | J2/G5 | K2/H5 |
+| E0/P6 | F0/Q6 | J0/G6 | K0/H6 |
+| E1/P7 | F1/Q7 | J1/G7 | K1/H7 |
+| E2/P8 | F2/Q8 | J2/G8 | K2/H8 |
 
 ### Connections between the Nano and PWMDRVx:
 
@@ -53,12 +53,12 @@ VSS, VDD, V0, RS, RW, W, D0, D1, D2, D3, D4, D5, D6, D7, LCD+ (A), LCD- (K).
 |   3 | D6 |
 |   4 | D5 |
 |   5 | D4 |
-|   6 | only W8: LED+ (A)|
+|   6 | only F8: LED+ (A)|
 |   7 | only J0: EN |
 |   8 | only J1: EN |
-|   9 | only X8: LED+ (A)|
-|  10 | only Y8: LED+ (A)|
-|  11 | only Z8: LED+ (A)|
+|   9 | only E8: LED+ (A)|
+|  10 | only H8: LED+ (A)|
+|  11 | only G8: LED+ (A)|
 |  12 | RS |
 |  A0 | only J2: EN |
 |  A1 | only K0: EN |
@@ -70,10 +70,10 @@ VSS, VDD, V0, RS, RW, W, D0, D1, D2, D3, D4, D5, D6, D7, LCD+ (A), LCD- (K).
 ### Connections between PWMDRVs and LCDs:
 | PWMDRVx pin | LCD |
 |-------------|-----|
-| PWMDRV0 PWM pin 0-7  | W0-7: LED+ (A) |
-| PWMDRV0 PWM pin 8-15 | X0-7: LED+ (A) |
-| PWMDRV1 PWM pin 0-7  | Y0-7: LED+ (A) |
-| PWMDRV1 PWM pin 8-15 | Z0-7: LED+ (A) |
+| PWMDRV0 PWM pin 0-7  | F0-7: LED+ (A) |
+| PWMDRV0 PWM pin 8-15 | E0-7: LED+ (A) |
+| PWMDRV1 PWM pin 0-7  | G0-7: LED+ (A) |
+| PWMDRV1 PWM pin 8-15 | H0-7: LED+ (A) |
 
 ### Important note about the LCD backlight
 The LCD displays we're using accepts 5V for the backlight, and consumes a very small current. <br/>
