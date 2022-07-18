@@ -79,7 +79,7 @@ void test_setup() {
     lcd_group[i]->print("  |  ");
     lcd_group[i]->print('W' + i / 3);
     lcd_group[i]->print("/");
-    lcd_group[i]->print('F' + i / 3);
+    lcd_group[i]->print('E' + i / 3);
     lcd_group[i]->print(" ");
     lcd_group[i]->print('0' + i % 3);
     lcd_group[i]->print("/");
