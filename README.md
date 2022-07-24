@@ -43,7 +43,7 @@ The LCD displayed are arranged an designated with two codes, one for the backlig
 
 ### LCD1602 pin Designations:
 The pin designation, left to right when the front side is up, and oriented so the pins are at the top:<br/>
-VSS, VDD, V0, RS, RW, W, D0, D1, D2, D3, D4, D5, D6, D7, LCD+ (A), LCD- (K).
+VSS, VDD, V0, RS, RW, EN, D0, D1, D2, D3, D4, D5, D6, D7, LCD+ (A), LCD- (K).
 
 ### Connections between the Nano and the LCD displays:
 
