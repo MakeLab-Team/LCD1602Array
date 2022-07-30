@@ -19,8 +19,9 @@ public:
     int v = floatToInt(val);
     if (v==256) {
       digitalWrite(_pin, HIGH);
-    } else
-    analogWrite(_pin,v);
+    } else {
+      analogWrite(_pin,v);
+    }
   }
 };
 
